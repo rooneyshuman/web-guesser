@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar mavbar-expand-sm navbar-dark bg-primary" role="navigation">
+      <a class="navbar-brand fas fa-dice" href="/">&nbsp NUMBER GUESSER</a>
+    </nav>
+  </header>
+
+  <main>  
+    <div class="container col-sm-12 mt-5">
+
+    <div class="my-3">
+      <h6>Enter a number between 1 and 100:</h6>
+    </div>
+
+    <form class="form-inline">
+      <div class="form-group mb-2">
+        <input type="text" class="form-control" id="guess" name="guess" placeholder="Enter a number...">
+      </div>
+      <button type="submit" class="btn btn-primary mb-2 ml-2">Check!</button>
+    </form>
+
+    </div>
+  </main>
+</body>
+
+</html>
+The secret number is: <%= random_num %>
