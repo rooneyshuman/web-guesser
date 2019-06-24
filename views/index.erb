@@ -19,23 +19,24 @@
     </nav>
   </header>
 
-  <main>  
+  <main>
     <div class="container col-sm-12 mt-5">
-
-    <div class="my-3">
-      <h6>Enter a number between 1 and 100:</h6>
-    </div>
-
-    <form class="form-inline">
-      <div class="form-group mb-2">
-        <input type="text" class="form-control" id="guess" name="guess" placeholder="Enter a number...">
+      <div class="my-3">
+        <h6>Enter a number between 1 and 100:</h6>
       </div>
-      <button type="submit" class="btn btn-primary mb-2 ml-2">Check!</button>
-    </form>
 
+      <form class="form-inline">
+        <div class="form-group mb-2">
+          <input type="text" class="form-control" id="guess" name="guess" placeholder="Enter a number...">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2 ml-2">Check!</button>
+      </form>
+
+      <div class="my-3">
+        <h6><%= message %></h6>
+      </div>
     </div>
   </main>
 </body>
 
 </html>
-The secret number is: <%= random_num %>
