@@ -1,9 +1,10 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
-get '/' do
-"The secret number is: " + @@random_num.to_s
- 
-end
+# Variables
+random_num = rand(100)
+title = "Number Guesser"
 
-@@random_num = rand(100)
+get '/' do
+  erb :index, :locals => {:title => title, :random_num => random_num}
+end
