@@ -2,9 +2,8 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sinatra/base'
 
-set :random_num, rand(1..100)
-
 class App < Sinatra::Base
+  set :random_num, rand(1..100)
   get '/' do
     title = "Number Guesser"
     user_guess = params["guess"].to_i
