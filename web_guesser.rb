@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
+require 'sinatra/base'
 
 set :random_num, rand(1..100)
 
@@ -42,4 +43,6 @@ class App < Sinatra::Base
       "You guessed correctly! The random number was " + num.to_s
     end
   end
+  
+  run!
 end
