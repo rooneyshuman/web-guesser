@@ -18,7 +18,6 @@ class App < Sinatra::Base
 
   def check_guess(user_guess)
     num = settings.random_num
-    print("Random number: #{num} \n")
     if user_guess == 0
       ""
     elsif user_guess > num
